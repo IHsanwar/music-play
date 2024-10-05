@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="transition ease-in-out delay-190 h-screen flex items-center justify-center bg-gray-900 bg-cover backdrop-blur bg-[url('/2341921.jpg')] hover:backdrop-filter-none">
+  <div class="music-player bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-sm border-solid border-2 border-slate-700 hover:backdrop-blur ">
+    <p class="border-solid border-2 border-slate-900"><img src="2341921.jpg" ></p>
+    <h2 class="text-2xl font-bold text-center mb-4 text-white mt-2">Now Playing</h2>
+    <p id="song-title" class="text-lg text-center mb-6 text-white italic">To the Abyss</p>
+    <audio id="audio" src="Made in Abyss OST 1_ 08.To the Abyss!.mp3"></audio>
+
+    <div class="controls flex justify-center gap-4 mb-6">
+      <button id="prev" class="text-2xl px-4 py-2 bg-gray-700 rounded-full hover:bg-gray-600 focus:outline-none"><img class="hy" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/end--v1.png" alt="end--v1"/></button>
+      <button id="play-pause" class="text-2xl px-4 py-2 bg-green-500 rounded-full hover:bg-green-400 focus:outline-none"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="play--v1"/></button>
+      <button id="next" class="text-2xl px-4 py-2 bg-gray-700 rounded-full hover:bg-gray-600 focus:outline-none"><img width="25" height="25" src="https://img.icons8.com/ios-filled/40/end--v1.png" alt="end--v1"/></button>
+    </div>
+
+    <div class="progress-bar">
+      <input type="range" id="progress" value="1" min="0" max="100" class="w-full h-2 bg-gray-700 rounded-lg appearance-none">
+    </div> 
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
